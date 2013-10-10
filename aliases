@@ -1,0 +1,41 @@
+alias src="mate ~/.bashery/ && mate ~/.bashrc"
+alias src-apply="source ~/.bashrc"
+
+alias c="clear"
+alias l="ls"
+alias la="ls -lah"
+alias ..="cd .."
+
+alias g+="git add"
+alias g-="git remove"
+alias gb="git branch"
+alias gs="git status"
+alias gcm="git commit -m"
+alias gpo="git push origin"
+alias gpl="git pull origin"
+alias gpt="git push --tags"
+alias g-aliases="sh ~/.bashery/scripts/githelp.sh"
+
+alias g-DS_Store="find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch"
+
+# Automatically reads the current branch, parsing the Git Flow
+# Branch name and executing the desired action.
+alias flow-helper="sh ~/.bashery/scripts/gitflow-helper.sh"
+
+alias flow="git flow init"
+
+# Features
+alias feat-start="git flow feature start"
+alias feat-finish="flow-helper feature finish"
+alias feat-push="flow-helper feature publish"
+alias feat-track="flow-helper feature track"
+alias feat-pull="flow-helper feature pull"
+
+# Release
+alias rel-start="git flow release start"
+alias rel-finish="flow-helper release finish"
+alias rel-push="flow-helper release publish"
+alias rel-track="flow-helper release track"
+alias rel-pull="flow-helper release pull"
+
+
